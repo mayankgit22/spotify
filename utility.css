@@ -1,0 +1,105 @@
+.button{
+    background-color: #f4f4f4;
+    border: none;
+    font-size: 01em;
+    font-weight: bold;
+    height: 6vh;
+    width: 6vw;
+    /* height: 5vh; */
+    border-radius: 50px;
+    /* margin: 10px; */
+
+}
+.rightdownpart{
+    width: 100%;
+    height: auto;
+    /* padding: 10px; */
+    background: linear-gradient(to left top, rgb(19, 19, 19),rgb(24, 24, 24))
+}
+.image{
+    width: 170px;
+    height: 170px;
+    border-radius: 100px;
+    margin-right: 20px;
+    margin-left: 15px;
+    margin-top: 10px;
+    
+}
+.image1{
+    width: 170px;
+    height: 170px;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-left: 15px;
+    margin-top: 10px;
+    
+}
+.cursor{
+    cursor: pointer;
+}
+.hover:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.hover1:hover{
+
+    background:linear-gradient(to bottom, rgb(19, 19, 19),rgb(41, 41, 41));
+    transition-delay: 0.9s;
+
+}
+.hover1{
+    position: relative;
+    padding: 5px;
+    /* color: ; */
+    /* margin: 2px; */
+   
+    /* transition-property: background; */
+    border-radius: 10px;
+}
+.width{
+    width: 20vw;
+    height: 20vh;
+}
+.playbtn{
+    position: absolute;
+    bottom: -20px;
+    opacity: 0;
+    right: 30px;
+    /* display: none; */
+    /* visibility: hidden; */
+    transition: all .51s ease-out;
+    /* transition-property: opacity; */
+
+}
+.hover1:hover .playbtn{
+    cursor: pointer;
+    bottom: 60px;
+    right: 30px;
+    opacity: 1;
+}
+.playbtn:hover{
+    transform: scale(1.15);
+}
+.invert{
+    filter: invert(1);
+}
+.logo{
+    /* padding-left: 5px; */
+    width: 20px;
+    height: 20px;
+}
+.flex{
+    display: flex
+    ;
+    width: 200px;
+    justify-content: center;
+    flex-direction: column;
+}
+#playlibrary{
+    transition: all 0.3s;
+width: 30px;
+height: 30px;
+}
+#playlibrary:hover{
+transform: scale(1.1);
+}

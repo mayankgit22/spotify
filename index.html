@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone'</title>
+    <link rel="icon" href="spotify.svg
+    ">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="utility.css"> 
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="spotifylogo"><img  class="cursor" src="spotify.svg" stylealt=""></div>
+            <div style="display: flex; flex-direction: column;">
+            <div class="library">
+                <div id="playlistlogo">
+                    <span aria-hidden="true" class="IconWrapper__Wrapper-sc-16usrgb-0 jEDcnm"><svg data-encore-id="icon"
+                            role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE">
+                            <path
+                                d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z">
+                            </path>
+                        </svg></span>
+                    </div>
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songslist">
+                  
+
+                </div>
+        </div>
+            <div class="libraryfooter">
+                <a class="hover" href="https://www.spotify.com/in-en/legal/">Legal</a>
+                <a  class="hover"  href="https://www.spotify.com/in-en/safetyandprivacy/">Safety &amp; Privacy Center</a>
+                <a  class="hover"  href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                <br>
+                <a  class="hover"  href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                <a  class="hover"  href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                <a  class="hover"  href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                <div id="langbtn"><button>
+                        <svg role="img" viewBox="0 0 16 16" aria-hidden="true">
+                            <path
+                                d="M8.152 16H8a8 8 0 1 1 .152 0zm-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296zM4.877 7.25c.062-1.771.34-3.386.773-4.624.099-.284.208-.554.329-.806a6.507 6.507 0 0 0-4.436 5.43h3.334zm-3.334 1.5a6.507 6.507 0 0 0 4.436 5.43 7.974 7.974 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624H1.543zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129H6.378zm5.048 0c-.061 1.771-.339 3.386-.772 4.624-.082.235-.171.46-.268.674a6.506 6.506 0 0 0 4.071-5.298h-3.03zm3.031-1.5a6.507 6.507 0 0 0-4.071-5.298c.097.214.186.44.268.674.433 1.238.711 2.853.772 4.624h3.031z">
+                            </path>
+                        </svg>
+                        English
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right" style="display: flex;
+        flex-direction: column; position:relative;">
+            <div id="header">
+                <nav id="headnav">
+                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
+                        class="Svg-sc-ytk21e-0 bneLcE cursor">
+                        <path
+                            d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732l-7.5-4.33z">
+                        </path>
+                    </svg>
+                    <div id="searchbar" style="position: relative; ">
+                        <img src="search.svg" alt="hfhh"
+                            style="filter: invert(.8); position: absolute; left: 10px;  width: 25px; height:25px;  ">
+                        <input type="search" name="search" id="headsearch" placeholder="What you want to play?">
+                    </div>
+                    <div>
+                        <button style="background-color: black; color: #c5c4c4; border: none; font-size: 1em; font-weight: bold; margin-right: 5px;cursor: pointer;
+                        
+                        ">sign up</button>
+                        <button class="button cursor">Log in</button>
+                    </div>
+                </nav>
+            </div>
+            <div class="rightdownpart">
+                <!-- <div class="artistheading"
+                    style="display: flex;  flex-wrap: wrap; flex-direction: row; justify-content: space-between; padding: 10px; align-items: center; font-size:.91em; font-family: monospace;">
+                    <h2 class="hover">Popular artists</h2>
+                    <h4 class="hover">show all</h4>
+                </div> -->
+                <!-- <div id="images" style="display: flex;">
+                    <div class="hover1"><img  class="image cursor" src="1st.png" alt="img">
+                    <h4 style="margin-left: 10px; " class="hover">Henry</h4>
+                <p style="margin-left: 10px;">Artist</p></div>
+                    <div  class="hover1 ">
+                        <img  class="image cursor" src="2nd.png" alt="img"><h4 class="hover" style="margin-left: 10px;">Crisitiana</h4><p style="margin-left: 10px;">Artist</p></div>
+                    <div  class="hover1"><img  class="image cursor" src="3rd.png" alt="img"><h4 class="hover" style="margin-left: 10px;">Luke</h4><p style="margin-left: 10px;">Artist</p></div>
+                    <div  class="hover1">
+                        <img  class="image cursor" src="4th.png" alt="img"><h4 class="hover" style="margin-left: 10px;">Penny</h4><p style="margin-left: 10px;">Artist</p></div>
+                    <div  class="hover1"><img  class="image cursor" src="6th.png" alt="img"><h4 class="hover" style="margin-left: 10px;">Justin</h4><p style="margin-left: 10px;">Artist</p></div>
+
+
+
+ <img  class="image" src="5th.png" alt="img">
+<img  class="image" src="7th.png" alt="img"> -->
+                <!-- </div>  -->
+                <div class="artistheading"
+                    style="display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-between; padding: 10px; align-items: center; font-size:.91em; font-family: monospace;">
+                    <h2 class="hover">Popular artists</h2>
+                    <h4 class="hover">show all</h4>
+                </div>
+                <div id="images" style="display: flex;">
+                    <div class="hover1"><svg width="60" class="playbtn" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Green Circular Background -->
+                        <circle cx="30" cy="30" r="25" fill="#1DB954" />
+                        <!-- Black Play Icon -->
+                        <polygon points="25,20 25,40 40,30" fill="#00000" />
+                    </svg>
+                    <img  class="image1 cursor" src="8th.png" alt="img">
+                    <h4 style="margin-left: 10px; " class="hover">Ashiqui 2</h4>
+                <p style="margin-left: 10px;">Arijit singh,Ankit Tiwari</p></div>
+                    <div  class="hover1 ">
+                        <svg width="60" class="playbtn" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Green Circular Background -->
+                            <circle cx="30" cy="30" r="25" fill="#1DB954" />
+                            <!-- Black Play Icon -->
+                            <polygon points="25,20 25,40 40,30" fill="#00000" />
+                        </svg>
+                        <img  class="image1 cursor" src="9th.png" alt="img"><h4 class="hover" style="margin-left: 10px;">Glory</h4><p style="margin-left: 10px;">Honey Singh</p></div>
+                    <div  class="hover1"><svg width="60" class="playbtn" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Green Circular Background -->
+                        <circle cx="30" cy="30" r="25" fill="#1DB954" />
+                        <!-- Black Play Icon -->
+                        <polygon points="25,20 25,40 40,30" fill="#00000" />
+                    </svg><img  id="jotummereho" class="image1 cursor" src="10th.png" alt="img"><h4 class="hover" style="margin-left: 10px;">Jo Tum Mere Ho</h4><p style="margin-left: 10px;">Anuv Jain</p></div>
+                    <div  class="hover1">
+                    <svg width="60"  class="playbtn" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Green Circular Background -->
+                            <circle cx="30" cy="30" r="25" fill="#1DB954" />
+                            <!-- Black Play Icon -->
+                            <polygon points="25,20 25,40 40,30" fill="#00000" />
+                        </svg>
+                        <img  class="image1 cursor" src="11th.png" alt="img"><h4 class="hover" style="margin-left: 10px;">Softly</h4><p style="margin-left: 10px;">Karan Aujla</p></div>
+                    <div  class="hover1">
+                        <svg width="60" class="playbtn" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Green Circular Background -->
+                            <circle cx="30" cy="30" r="25" fill="#1DB954" />
+                            <!-- Black Play Icon -->
+                            <polygon points="25,20 25,40 40,30" fill="#00000" />
+                        </svg><img  class="image1 cursor" src="12th.png" alt="img"><h4 class="hover" style="margin-left: 10px;">Yeh Jawaani Hai Deewani</h4><p style="margin-left: 10px;">Pritam</p></div>
+
+
+
+<!-- <img  class="image" src="5th.png" alt="img">
+<img  class="image" src="7th.png" alt="img"> -->
+                </div>
+            </div>
+            <div class="playbar">
+                <div id="songinfo">
+                  
+                </div>
+                <div id="playbtns">
+                   <img id="prev" src="prev.svg" alt="prev">
+                   <img id="play" src="play.svg" alt="play">
+                   <img id="next" src="next.svg" alt="next">
+                   <div id="seekbar">
+                       <div id="seekcircle" ></div>
+                    </div>
+                    
+                    <div id="songduration"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
