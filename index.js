@@ -62,7 +62,7 @@ currentSong.addEventListener("loadeddata",()=>{
 // console.log(x)
   console.log(duration1)
 })
-const playMusic =(e)=>{
+const playMusic =(e,pause=false)=>{
 currentSong.src = "https://mayankgit22.github.io/spotify/songs/" + encodeURIComponent(e);
 
    if(!pause){
