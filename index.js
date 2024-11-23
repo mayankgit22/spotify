@@ -62,9 +62,10 @@ currentSong.addEventListener("loadeddata",()=>{
 // console.log(x)
   console.log(duration1)
 })
-const playMusic =(e,pause=false)=>{
+const playMusic =(e)=>{
 
-   currentSong.src = "/songs/"+ e;
+   currentSong.src = "https://mayankgit22.github.io/spotify/songs/Aaj%20kal%20Ki%20Raat12%20-%20Copy.mp3"+ encodeURIComponent(e);
+;
    if(!pause){
 
      currentSong.play();
