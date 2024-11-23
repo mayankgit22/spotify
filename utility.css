@@ -103,3 +103,8 @@ height: 30px;
 #playlibrary:hover{
 transform: scale(1.1);
 }
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
