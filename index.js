@@ -63,9 +63,8 @@ currentSong.addEventListener("loadeddata",()=>{
   console.log(duration1)
 })
 const playMusic =(e)=>{
+currentSong.src = "https://mayankgit22.github.io/spotify/songs/" + encodeURIComponent(e);
 
-   currentSong.src = "https://mayankgit22.github.io/spotify/songs/Aaj%20kal%20Ki%20Raat12%20-%20Copy.mp3"+ encodeURIComponent(e);
-;
    if(!pause){
 
      currentSong.play();
@@ -99,8 +98,7 @@ async function main(){
   // let currentSong=new Audio();
     let song= await songs();
    // Set the first song as the current song source
-   
-   currentSong.src = "/songs/" + song[0];
+    currentSong.src = "https://mayankgit22.github.io/spotify/songs/" + encodeURIComponent(song[0]);
    document.querySelector("#songinfo").innerHTML = `<span>${song[0]}</span>`;
    document.querySelector("#songduration").innerHTML = `<h5>00:00/${formatTime(currentSong.duration || 0)}</h5>`;
     playMusic(song[0]);
