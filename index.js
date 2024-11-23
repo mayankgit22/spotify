@@ -29,9 +29,15 @@ const play=document.getElementById("play");
 const prev=document.getElementById("prev");
 const next=document.getElementById("next");
 async function songs(){
-    let url = await fetch('http://127.0.0.1:5500/songs/');
-  let response= await url.text();
+  try{
+    let url = await fetch('songs/songs.json');
+  let response= await url.json();
   console.log(response);
+  return response;}
+catch (error) {
+        console.error("Error fetching songs:", error);
+        return [];
+    }
 let div=document.createElement("div");
 div.innerHTML=response;
 // let tds=document.getElementsByTagName("directory")
@@ -93,14 +99,14 @@ async function main(){
   // let currentSong=new Audio();
     let song= await songs();
    // Set the first song as the current song source
-   
-   currentSong.src = "/songs/" + song[0];
+  
    document.querySelector("#songinfo").innerHTML = `<span>${song[0]}</span>`;
    document.querySelector("#songduration").innerHTML = `<h5>00:00/${formatTime(currentSong.duration || 0)}</h5>`;
     // console.log(song);
     let songslist =document.querySelector(".songslist");
     for(let s of song){
-    currentSong.src=s[0];
+ currentSong.src = "/songs/" + s;
+
     //   let name= song[s];
 
       songslist.innerHTML=songslist.innerHTML+`<li style="display: flex;
