@@ -105,7 +105,8 @@ async function main(){
     // console.log(song);
     let songslist =document.querySelector(".songslist");
     for(let s of song){
-    currentSong.src=s[0];
+    currentSong.src = "https://mayankgit22.github.io/spotify/songs/" + encodeURIComponent(s[0]);
+
     //   let name= song[s];
 
       songslist.innerHTML=songslist.innerHTML+`<li style="display: flex;
